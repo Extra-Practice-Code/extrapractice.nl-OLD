@@ -1,41 +1,19 @@
-title: Contact
-
+title: Contact page
 pages: false
-
-options: 
-  delete: false
-  status: false
-
-fields: 
+files: false
+fields:
   title:
     label: Title
     type: title
-  
-  intro:
-    label: Intro
-    type: textarea
-    
-  contactoptions:
-    label: Contact Options
-    type: structure
-    style: table
-    fields:
-      title:
-        label: Title
-        type: text
-      icon:
-        label: Icon
-        type: image
-      text:
-        label: Text
-        type: text
-      url:
-        label: URL
-        type: text
-      linktext:
-        label: Link Text
-        type: text
-  
-  text:
-    label: Text
-    type: textarea
+  email:
+    label: Email
+    type: email
+    width: 1/2
+  instagram:
+    label: instagram
+    type: url
+    width: 1/2
+  arena:
+    label: Are.na
+    type: url
+    width: 1/2

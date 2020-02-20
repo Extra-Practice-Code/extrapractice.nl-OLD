@@ -1,13 +1,9 @@
-Title: Kirby Starterkit
+Title: Extra Practice
 
 ----
 
-Author: Bastian Allgeier GmbH
+Description: The online entity of Extra Practice.
 
 ----
 
-Description: This is Kirby's Starterkit.
-
-----
-
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: © 2009–(date: Year)

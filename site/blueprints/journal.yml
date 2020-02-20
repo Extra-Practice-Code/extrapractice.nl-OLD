@@ -1,0 +1,8 @@
+title: journal
+
+files: false
+
+pages:
+  template: journalentry
+  sort: flip
+  num: date

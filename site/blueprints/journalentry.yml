@@ -1,0 +1,43 @@
+title: Journal Entry
+
+pages: false
+
+files: true
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  date:
+    icon: calendar
+    label: Date
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    required: true
+    width: 1/2
+
+  author:
+    label: Author
+    type: text
+    width: 1/2
+
+  topic:
+    label: Topic
+    type: tags
+    width: 1/2
+
+  tags:
+    label: Tags
+    type: tags
+    width: 1/2
+
+  bgcolor:
+    label: Background Colour
+    type:
+
+  text:
+    label: Text
+    type: textarea
