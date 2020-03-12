@@ -1,11 +1,11 @@
 <?php snippet('header') ?>
-
-<section class="content blogarticle">
+<div class="container">
+<section class="content">
   <article>
-    <h1><?= $page->title()->html() ?></h1>
-    <?= $page->text()->kirbytext() ?>
-
-    <a href="<?= url('journal') ?>">Back…</a>
-
+    <p class="title"><?= $page->title()->html() ?></p>
+    <?= kirbytext($page->text()) ?>
   </article>
+  <a class="back-button" href="<?= url('home') ?>">&#x2190</a>
 </section>
+</div>
+</body>

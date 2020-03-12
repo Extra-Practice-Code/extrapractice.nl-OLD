@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<body>
+<div class="container">
   <div class="top-bar">
     <div class="info">
       <?= $page->text()->kirbytext() ?>
@@ -24,5 +24,5 @@
   snippet($section->uid(), array('data' => $section)); }
   ?>
 
-
+</div>
 </body>

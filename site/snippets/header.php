@@ -8,4 +8,6 @@
   </title>
   <?= css('assets/css/index.css') ?>
   <?= js('assets/js/script.js') ?>
+  <?= js('assets/js/jquery.min.js') ?>
 </head>
+<body>

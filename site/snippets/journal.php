@@ -1,14 +1,16 @@
-<section id="journal-entries">
-  <h1><?= $data->title()->html() ?></h1>
-  <?= $data->text()->kirbytext() ?>
+<section id="journal-list">
+  <p><?= $data->title()->html() ?></p>
 
-  <ul>
+  <ul id="entries">
     <?php foreach($data->children()->visible() as $entry): ?>
-      <li class="entry" style="background-color: <?= $entry->bgcolor() ?>;" onclick="revealExcerpt()">
+      <hr />
+      <a href="<?= $entry->url() ?>">
+      <li class="entry" <?= $entry->bgcolor() ?>>
         <div class="entry-title"><?= $entry->title()->html() ?> </div>
         <div class="entry-author">by <?= $entry->author()->html() ?></div>
-        <div class="entry-excerpt"><p><?= $entry->text()->excerpt(300) ?></p></div>
+        <div class="entry-excerpt"><?= $entry->text()->excerpt(300) ?></div>
       </li>
+    </a>
     <?php endforeach ?>
   </ul>
 </section>

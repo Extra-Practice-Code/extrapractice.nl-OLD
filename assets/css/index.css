@@ -4,20 +4,48 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  font-size: 18px;
 }
 
-a {
+hr {
+  border-top: 1px solid #0036f7;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p.title {
+  padding-bottom: 15px;
+}
+
+a:link {
   font-family: 'Times New Roman', serif;
+  color: #0036f7;
+}
+
+a:visited {
+  color: #0036f7;
+}
+
+a.back-button {
+  margin-top: 30px;
+}
+
+.container {
+  margin: auto;
+  padding-top: 30px;
+  width: 50rem;
 }
 
 .top-bar {
   width: 100%;
-  padding: 30px;
 }
 
 .info {
   display: inline-block;
-  width: 25%;
+  width: 40%;
 }
 
 .contact {
@@ -30,15 +58,18 @@ a {
   list-style: none;
 }
 
-.entry {
-  height: 50px;
+#entries {
+  list-style: none;
+  padding-left: 0;
 }
 
-#journal-entries {
-  position: fixed;
-  bottom: 0;
+.entry {
+  padding: 15px 0px;
+}
+
+#journal-list {
   width: 100%;
-  padding: 30px;
+  padding-top: 50px;
 }
 
 .entry-title {
