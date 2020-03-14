@@ -1,4 +1,5 @@
 Title: Journal
+
 ----
+
 Text: Journal entries from the members of Extra Practice.
-----
