@@ -17,8 +17,6 @@ for more information: http://getkirby.com/license
 
 c::set('license', 'put your license key here');
 
-c::set('debug',true);
-
 /*
 
 ---------------------------------------
