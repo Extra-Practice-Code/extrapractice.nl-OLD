@@ -1,5 +1,4 @@
 <section id="journal-list">
-  <p><?= $data->title()->html() ?></p>
 
   <ul id="entries">
     <?php foreach($data->children()->visible() as $entry): ?>
