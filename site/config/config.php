@@ -15,7 +15,9 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PERSONAL-704ad6b810c40d5057b4be47f28911eb');
+
+c::set('panel.install', true);
 
 /*
 

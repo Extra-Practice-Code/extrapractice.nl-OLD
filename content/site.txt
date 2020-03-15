@@ -7,3 +7,7 @@ Description: The online entity of Extra Practice.
 ----
 
 Copyright: © 2009–(date: Year)
+
+----
+
+Author:
