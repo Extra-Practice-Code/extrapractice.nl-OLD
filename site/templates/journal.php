@@ -11,7 +11,6 @@
       <div class="article-entry">
         <h1><?= $article->title()->html() ?></h1>
         <p><?= $article->text()->excerpt(200) ?></p>
-        <?= $article->tags()->html() ?>
         <a href="<?= $article->url() ?>">Read more…</a>
       </div>
 
