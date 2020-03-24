@@ -6,6 +6,7 @@
   <title>
     <?= $page->title() ?> | <?= $site->title() ?>
   </title>
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
   <?= css('assets/css/index.css') ?>
   <?= js('assets/js/script.js') ?>
   <?= js('assets/js/jquery.min.js') ?>

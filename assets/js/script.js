@@ -1,1 +1,0 @@
-$('.entry-excerpt').accordian()
