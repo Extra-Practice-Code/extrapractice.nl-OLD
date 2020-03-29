@@ -2,4 +2,4 @@ Title: Index
 
 ----
 
-Text: Extra Practice is an experiment in working and learning together, founded in 2019 by (link: https://www.gladeboer.nl/ text: Gijs de Boer), (link: http://bnjmnearl.eu/ text: Benjamin Earl) and (link: http://www.emmaverhoeven.nl/ text: Emma Verhoeven).
+Text: (link: home text: Extra Practice) is an experiment in working and learning together, founded in 2019 by (link: https://www.gladeboer.nl/ text: Gijs de Boer), (link: http://bnjmnearl.eu/ text: Benjamin Earl) and (link: http://www.emmaverhoeven.nl/ text: Emma Verhoeven).

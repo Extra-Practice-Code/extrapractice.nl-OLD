@@ -1,13 +1,25 @@
 title: Journal Entry
 
 pages: false
-
 files: true
 
+options:
+  preview: true
+  status: true
+  template: false
+  url: true
+  delete: true
+
 fields:
+  postInfo:
+    label: Post Info
+    type: headline
+    numbered: true
+
   title:
     label: Title
     type: title
+    required: true
 
   date:
     icon: calendar
@@ -23,21 +35,55 @@ fields:
     label: Author
     type: text
     width: 1/2
+    required: true
 
-  topic:
-    label: Topic
+  department:
+    label: Department
     type: tags
     width: 1/2
+    lower: true
 
-  tags:
-    label: Tags
+  course:
+    label: Course
     type: tags
+    lower: true
     width: 1/2
 
-  bgcolor:
-    label: Background Colour
-    type:
+  parentPost:
+    label: Parent post
+    type: page
+    width: 1/2
 
-  text:
+  relatedPost1:
+    label: Related Post 1
+    type: page
+
+  relatedPost2:
+    label: Related Post 2
+    type: page
+
+  relatedPost3:
+    label: Related Post 3
+    type: page
+
+  postContent:
+    label: Post Content
+    type: headline
+    numbered: true
+
+  coverImage:
+    label: Cover Image
+    type: image
+
+  postText:
     label: Text
+    type: textarea
+
+  footer:
+    label: Footer
+    type: headline
+    numbered: true
+
+  sources:
+    label: sources
     type: textarea

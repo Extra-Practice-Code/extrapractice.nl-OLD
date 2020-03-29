@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  font-size: 18px;
+  font-family: 'Times New Roman', serif;
+  font-size: 24px;
   background-color: #95cfa8;
 }
 
@@ -22,8 +22,8 @@ p.title {
 }
 
 a:link {
-  font-family: 'Times New Roman', serif;
-  color: #0036f7;
+  font-family: 'Arial', sans-serif;
+  font-size: 21px;
 }
 
 a:visited {
@@ -50,7 +50,7 @@ a.back-button {
 
 .info {
   display: inline-block;
-  width: 30%;
+  width: 20%;
 }
 
 .contact {
@@ -61,6 +61,7 @@ a.back-button {
 
 .contact ul {
   list-style: none;
+  margin-top: 0px;
 }
 
 #entries {
@@ -69,7 +70,9 @@ a.back-button {
 }
 
 .entry {
-  padding: 15px 0px;
+  padding: 15px 15px;
+  border: 1px solid #0036f7;
+  margin-top: 20px;
 }
 
 #journal-list {
@@ -86,7 +89,52 @@ a.back-button {
   float: right;
 }
 
-.entry-excerpt {
-  width: 45%;
-  display: none;
+article img {
+  max-width: 100%;
+  padding-top: 1.5rem;
+}
+
+article p {
+  padding-top: 1.5rem;
+  font-size: 24px;
+}
+
+.post-info p.title {
+  font-size: 34px;
+  text-decoration: underline;
+}
+
+.post-info .trail {
+  padding-top: 0px;
+  font-size: 16px;
+}
+
+.post-info .trail a {
+  font-size: 16px;
+}
+
+p.title {
+  padding-top: 0px;
+}
+
+.entry .trail {
+  text-decoration: none;
+}
+
+.entry .trail p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+
+
+/* RESPONSIVITY */
+@media all and (max-width: 850px) {
+  .info { width: 100%; font-size: 20px;}
+  .info a {font-size: 18px;}
+  .contact { float: left; text-align: left; display: block;}
+  .contact ul {  padding-left: 0px;}
+  .contact li {  padding-left: 0px; display: inline-block;}
+  .contact li a {font-size: 18px; padding-right: 10px;}
+  .container { width: 100%; padding: 150px 30px; display: block; }
 }

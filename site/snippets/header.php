@@ -1,6 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= $site->description() ?>">
   <meta name="keywords" content="<?= $site->keywords() ?>">
   <title><?= $site->title() ?></title>
@@ -16,3 +17,23 @@
   <?= js('assets/js/jquery.min.js') ?>
 </head>
 <body>
+  <div class="header-container">
+    <div class="top-bar">
+      <div class="info">
+        <?= $pages->find('home')->text()->kirbytext() ?>
+      </div>
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="mailto:<?= page('contact')->email(); ?>">Email</a>
+          </li>
+          <li>
+            <a href="<?= page('contact')->instagram()->url(); ?>">Instagram</a>
+          </li>
+          <li>
+            <a href="<?= page('contact')->arena()->url(); ?>">Are.na</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

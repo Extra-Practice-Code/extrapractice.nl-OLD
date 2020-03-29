@@ -1,20 +1,19 @@
 <?php snippet('header') ?>
-<body>
-  <div class="journal-container">
-    <section class="content blog">
+<div class="container">
+<section class="content">
 
-      <h1><?= $page->title()->html() ?></h1>
-      <?= $page->text()->kirbytext() ?>
+  <?php
+  foreach($pages->visible() as $section) {
+  snippet($section->uid(), array('data' => $section)); }
 
-      <?php foreach($page->children()->visible()->flip() as $article): ?>
+  if($tag = param('course')) {
+    $entry = $entry->filterBy('course', $course, ',');
+}
 
-      <div class="article-entry">
-        <h1><?= $article->title()->html() ?></h1>
-        <p><?= $article->text()->excerpt(200) ?></p>
-        <a href="<?= $article->url() ?>">Read more…</a>
-      </div>
+  if($tag = param('department')) {
+    $entry = $entry->filterBy('department', $department, ',');
+    }?>
 
-      <?php endforeach ?>
 
     </section>
   </div>

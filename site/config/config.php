@@ -19,6 +19,8 @@ c::set('license', 'K2-PERSONAL-704ad6b810c40d5057b4be47f28911eb');
 
 c::set('panel.install', true);
 
+c::set('debug',true);
+
 /*
 
 ---------------------------------------

@@ -1,6 +1,5 @@
 <?php snippet('header') ?>
-<body>
-  <p>
-    Hello, World
-  </p>
+<div class="container">
+poop
+</div>
 </body>
