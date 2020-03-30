@@ -1,8 +1,9 @@
-title: journal
+title: course
 
 files: false
+pages: true
 
 pages:
-  template: journalentry
+  template: entry
   sort: flip
   num: date

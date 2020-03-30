@@ -1,0 +1,9 @@
+title: school
+
+files: false
+pages: true
+
+pages:
+  template: department
+  sort: flip
+  num: date

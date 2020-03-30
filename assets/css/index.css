@@ -31,6 +31,7 @@ a:visited {
 }
 
 a.back-button {
+  font-size: 18px;
   margin-top: 30px;
 }
 
@@ -75,6 +76,20 @@ a.back-button {
   margin-top: 20px;
 }
 
+.breadcrumbs {
+  display: block;
+  text-decoration: none;
+}
+
+.breadcrumbs a {
+    font-size: 18px;
+}
+
+.breadcrumbs p {
+    font-size: 18px;
+    display: inline-block;
+}
+
 #journal-list {
   width: 100%;
   padding-top: 50px;
@@ -99,17 +114,25 @@ article p {
   font-size: 24px;
 }
 
+.parent-post {
+  padding: 15px;
+  background-color: #ffff88;
+  margin-bottom: 50px;
+  width: 30%;
+}
+
+.parent-post p {
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
 .post-info p.title {
   font-size: 34px;
   text-decoration: underline;
 }
 
-.post-info .trail {
-  padding-top: 0px;
-  font-size: 16px;
-}
-
-.post-info .trail a {
+.post-info .breadcrumbs {
+  padding-bottom: 10px;
   font-size: 16px;
 }
 
@@ -117,7 +140,7 @@ p.title {
   padding-top: 0px;
 }
 
-.entry .trail {
+.entry .breadcrumbs a {
   text-decoration: none;
 }
 
