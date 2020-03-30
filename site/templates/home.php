@@ -8,13 +8,13 @@
             <div class="entry-title"><?= $entry->title() ?> </div>
             <div class="entry-author">by <?= $entry->author() ?></div>
             <div class="breadcrumbs">
-              <?php $parents = $entry->parents();
-              foreach($parents->not('school')->flip() as $parent):
-                 if($parent->depth() == 2): ?>
+              <?php $parents = $entry->parents(); ?>
+              <?php foreach($parents->not('school')->flip() as $parent): ?>
+                 <?php if($parent->depth() == 2): ?>
                   <p><?= $parent->title() ?> /
                 <?php else:?>
                   <?= $parent->title() ?></p>
-                <? endif ?>
+                <?php endif ?>
               <?php endforeach ?>
             </div>
           </a>
