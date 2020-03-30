@@ -19,13 +19,13 @@
     </div>
     <div class="post-info">
       <div class="breadcrumbs">
-        <?php $parents = $page->parents();
-          foreach($parents->not('school')->flip() as $parent): ?>
-          <? if($parent->depth() == 2): ?>
+        <?php $parents = $page->parents(); ?>
+          <?php foreach($parents->not('school')->flip() as $parent): ?>
+          <?php if($parent->depth() == 2): ?>
             <a href="<?= $parent->url() ?>"> <?= $parent->title() ?> </a> /
-          <? else: ?>
+          <?php else: ?>
             <a href="<?= $parent->url() ?>"> <?= $parent->title() ?> </a>
-          <? endif ?>
+          <?php endif ?>
           <?php endforeach ?>
       </div>
       <p class="title"><?= $page->title()->html() ?></p>
