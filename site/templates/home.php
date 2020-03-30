@@ -9,10 +9,10 @@
             <div class="entry-author">by <?= $entry->author() ?></div>
             <div class="breadcrumbs">
               <?php $parents = $entry->parents();
-              foreach($parents->not('school')->flip() as $parent): ?>
-                <? if($parent->depth() == 2): ?>
+              foreach($parents->not('school')->flip() as $parent):
+                 if($parent->depth() == 2): ?>
                   <p><?= $parent->title() ?> /
-                <? else:?>
+                <?php else:?>
                   <?= $parent->title() ?></p>
                 <? endif ?>
               <?php endforeach ?>
