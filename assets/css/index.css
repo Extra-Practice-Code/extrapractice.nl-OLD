@@ -104,6 +104,10 @@ a.back-button {
   float: right;
 }
 
+article {
+  padding-bottom: 30px;
+}
+
 article img {
   max-width: 100%;
   padding-top: 1.5rem;
@@ -147,6 +151,10 @@ p.title {
 .entry .trail p {
   margin-top: 8px;
   font-size: 16px;
+}
+
+.cover-image {
+  margin-bottom: 30px;
 }
 
 
